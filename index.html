@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <title>PetShop</title>
+</head>
+
+<body>
+  <div>
+    <img src="src/assets/icons/dog-logo.svg" alt="Icone logo dog de um cachorro">
+  </div>
+
+  <main>
+    <section id="schedule">
+      <header>
+        <div id="your-schedule">
+          <h1>Sua agenda</h1>
+          <p>Aqui você pode cer todos os clientes e serviços agendados para hoje.</p>
+        </div>
+        <input type="date">
+      </header>
+      <div id="shifts">
+        <section id="morning">
+          <div class="shift-type">
+            <img src="src/assets/icons/sun.svg" alt="Icone de sol do turno da manhã">
+            <h2>Manhã</h2>
+            <span>9h-12h</span>
+          </div>
+          <hr>
+          <div class="shift">
+            <span>09:00</span>
+            <h3>Thor</h3>
+            <h3>/</h3>
+            <h3>Fernanda Costa</h3>
+            <h3>Vacinação</h3>
+            <h3>Remover Agendamento</h3>
+          </div>
+        </section>
+        <section id="afternoon">
+          <div class="shift-type">
+            <img src="src/assets/icons/cloud-sun.svg" alt="Icone de sol com nuvem do turno da tarde">
+            <h2>Tarde</h2>
+            <span>13h-18h</span>
+          </div>
+          <hr>
+          <div class="shift">
+            <span>09:00</span>
+            <h3>Thor</h3>
+            <h3>/</h3>
+            <h3>Fernanda Costa</h3>
+            <h3>Vacinação</h3>
+            <h3>Remover Agendamento</h3>
+          </div>
+        </section>
+        <section id="evening">
+          <div class="shift-type">
+            <img src="src/assets/icons/moon.svg" alt="Icone de lua do turno da noite">
+            <h2>Noite</h2>
+            <span>19h-21</span>
+          </div>
+          <hr>
+          <div class="shift">
+            <span>09:00</span>
+            <h4>Thor</h4>
+            <h4>/</h4>
+            <h4>Fernanda Costa</h4>
+            <h4>Vacinação</h4>
+            <h4>Remover Agendamento</h4>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <input type="button" class="button" value="Novo Agendamento">
+      </footer>
+    </section>
+
+    <section id="to-schedule">
+      <header>
+        <h1>Agende um atendimento</h1>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      </header>
+      <form action="">
+        <label for="name-tutor">Nome do tutor</label>
+        <input type="text" id="name-tutor" placeholder="Helena Souza" >
+
+        <label for="name-pet">Nome do pet</label>
+        <input type="text" id="name-pet" placeholder="Cheddar" >
+        
+        <label for="name-tutor">Telefone</label>
+        <input type="number" id="name-tutor" placeholder="(00) 0 0000-0000" >
+
+        <label for="description">Descrição do serviço</label>
+        <input type="" id="description" placeholder="Banho e tosa" >
+
+        <div id="date-hour">
+          <div id="date">
+            <label for="date">Data</label>
+            <input type="date">
+          </div>
+          <div id="hour">
+            <h4>Hora</h4>
+            <select name="hour" id="hour">
+              <option value="8h">8h</option>
+              <option value="9h">9h</option>
+              <option value="10h">10h</option>
+              <option value="11h">11h</option>
+              <option value="12h">12h</option>
+              <option value="13h">13h</option>
+              <option value="14h">14h</option>
+              <option value="15h">15h</option>
+              <option value="16h">16h</option>
+              <option value="17h">17h</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="Agendar">
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
