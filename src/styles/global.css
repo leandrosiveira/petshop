@@ -140,7 +140,7 @@ input[type="date"] {
     outline: none;
   }
 
-  input[type="date"]::-webkit-inner-spin-button {
+  &::-webkit-inner-spin-button {
     display: none;
     -webkit-appearance: none;
   }
@@ -153,6 +153,10 @@ input[type="date"] {
     cursor: pointer;
     transform: translateX(-2.6rem);
   } 
+
+  &::-webkit-datetime-edit {
+    opacity: unset;
+  }
 }
 
 footer {
