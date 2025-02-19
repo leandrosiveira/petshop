@@ -116,6 +116,9 @@ select {
 }
 
 input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   position: relative;
   background: 
   url('../assets/icons/calendar.svg') no-repeat left .8rem center, 
