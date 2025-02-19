@@ -116,9 +116,6 @@ select {
 }
 
 input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   position: relative;
   background: 
   url('../assets/icons/calendar.svg') no-repeat left .8rem center, 
@@ -141,6 +138,11 @@ input[type="date"] {
   &:focus {
     border: 1px solid var(--border-brand);
     outline: none;
+  }
+
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
   }
 
   &::-webkit-calendar-picker-indicator {
