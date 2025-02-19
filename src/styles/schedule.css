@@ -135,6 +135,10 @@ h3 {
 }
 
 @media (max-width: 780px) {
+  input[type="date"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+  }
   #schedule {
     width: 90vw;
     max-width: 45rem;
