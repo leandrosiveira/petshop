@@ -115,45 +115,23 @@ select {
   }
 }
 
-.date-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.date-wrapper input[type="date"] {
+input[type="date"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  position: relative;
   background: 
-    url('../assets/icons/calendar.svg') no-repeat left .8rem center, 
-    url('../assets/icons/arrow-down.svg') no-repeat right 0.75rem center;
+  url('../assets/icons/calendar.svg') no-repeat left .8rem center, 
+  url('../assets/icons/arrow-down.svg') no-repeat right 0.75rem center;
   background-size: 1.2rem;
   height: 3rem;
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--border-primary);
   border-radius: 8px;
   font: var(--label-calendar);
   color: var(--content-secondary);
   padding-left: 2.6rem;
   min-width: 11.7rem;
-}
-
-.date-wrapper span {
-  position: absolute;
-  left: 2.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--content-secondary);
-  pointer-events: none;
-}
-
-.date-wrapper input[type="date"]:focus + span,
-.date-wrapper input[type="date"]:valid + span {
-  display: none;
-}
-
-
-input[type="date"] {
 
   &:hover {
     border: 1px solid var(--border-secondary);
@@ -174,9 +152,6 @@ input[type="date"] {
     transform: translateX(-2.6rem);
   } 
 }
-
-
-
 
 footer {
   position: fixed;
