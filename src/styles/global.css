@@ -116,6 +116,9 @@ select {
 }
 
 input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   position: relative;
   background: 
   url('../assets/icons/calendar.svg') no-repeat left .8rem center, 
@@ -140,11 +143,6 @@ input[type="date"] {
     outline: none;
   }
 
-  &::-webkit-inner-spin-button {
-    display: none;
-    -webkit-appearance: none;
-  }
-
   &::-webkit-calendar-picker-indicator {
     position: absolute;
     opacity: 0;
@@ -154,10 +152,9 @@ input[type="date"] {
     transform: translateX(-2.6rem);
   } 
 
-  &::-webkit-datetime-edit {
-    opacity: 1;
-    z-index: 1;
-  }
+  /* &::-webkit-datetime-edit {
+    display: none;
+  } */
 }
 
 footer {
