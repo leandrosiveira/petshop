@@ -152,9 +152,14 @@ input[type="date"] {
     transform: translateX(-2.6rem);
   } 
 
-  /* &::-webkit-datetime-edit {
-    display: none;
-  } */
+  &::-moz-calendar-picker-indicator {
+    position: absolute;
+    opacity: 0;
+    width: 100%; 
+    height: 100%;
+    cursor: pointer;
+    transform: translateX(-2.6rem);
+  } 
 }
 
 footer {
@@ -163,6 +168,14 @@ footer {
   right: 1.5rem;
   z-index: 99999;
   /* garantir q esteja a frente de tudo. */
+}
+
+@media (max-width: 780px) {
+  input[type="date"] {
+    &::-webkit-datetime-edit {
+    display: none;
+    }
+  }
 }
 
 @media (max-width: 384px) {

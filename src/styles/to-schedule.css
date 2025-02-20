@@ -80,6 +80,7 @@
         display: grid;
         flex: 1;
         align-self: baseline;
+        border: 1px solid red;
       }
 
       & #hour-container {
