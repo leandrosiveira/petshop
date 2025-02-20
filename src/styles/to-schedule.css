@@ -80,7 +80,10 @@
         display: grid;
         flex: 1;
         align-self: baseline;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        & input[type="date"] {
+          max-width: fit-content;
+        }
       }
 
       & #hour-container {
