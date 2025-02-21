@@ -52,6 +52,20 @@
 
 body {
   background-color: #14151D;
+  & main {
+    position: relative;
+    & #schedule{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -0%); 
+    }
+    & #to-schedule{
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%); 
+    }
+  }
 }
 
 #logo {
@@ -162,6 +176,10 @@ input[type="date"] {
   } 
 }
 
+.margin-botton {
+  height: 5.25rem;
+}
+
 footer {
   position: fixed;
   bottom: 1.5rem;
@@ -170,11 +188,34 @@ footer {
   /* garantir q esteja a frente de tudo. */
 }
 
+.display-none {
+  display: none;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
 @media (max-width: 780px) {
   input[type="date"] {
     &::-webkit-datetime-edit {
     display: none;
     }
+  }
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    /* margin: auto; */
+    right: 3.8vw;
+    /* left: 0rem; */
+    width: 90vw;
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    right: 3.4vw;
   }
 }
 
@@ -182,5 +223,8 @@ footer {
   input,
   select {
     min-width: 11.7rem;
+  }
+  footer {
+    right: 2.6vw;
   }
 }
