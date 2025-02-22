@@ -198,9 +198,9 @@ footer {
 
 @media (max-width: 780px) {
   input[type="date"] {
-    &::-webkit-datetime-edit {
+    /* &::-webkit-datetime-edit {
     display: none;
-    }
+    } */
   }
   footer {
     display: flex;
