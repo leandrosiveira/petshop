@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development', // Pode ser 'development' ou 'production'
   entry: path.resolve(__dirname, "src", "main.js"), // Arquivo de entrada
   output: {
-    path: path.resolve(__dirname, 'dist', 'src'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js', // Arquivo final empacotado
   },
   devServer: {
