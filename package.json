@@ -4,7 +4,7 @@
   "author": "Leandro Silva de Oliveira",
   "scripts": {
     "dev": "webpack server",
-    "server": "nodemon json-server --watch server.json --port 3333",
+    "server": "json-server --watch server.json --port 3333",
     "build": "webpack"
   },
   "dependencies": {
