@@ -8,8 +8,10 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- <link rel="stylesheet" href="src/styles/main.css"> -->
 
@@ -42,7 +44,7 @@
             <span>9h-12h</span>
           </div>
           <div class="line"></div>
-          <div class="shift-schedule-container">
+          <!-- <div class="shift-schedule-container">
             <div class="shift-schedule">
               <span>09:00</span>
               <h3>Thor</h3>
@@ -51,7 +53,7 @@
             </div>
             <h3>Vacinação</h3>
             <h3 class="remove">Remover Agendamento</h3>
-          </div>
+          </div> -->
 
         </section>
         <section id="afternoon" class="shift">
@@ -61,47 +63,29 @@
             <span>13h-18h</span>
           </div>
           <div class="line"></div>
-          <div class="shift-schedule-container">
-            <div class="shift-schedule">
-              <span>09:00</span>
-              <h3>Thor</h3>
-              <h3>/</h3>
-              <h3>Fernanda Costa</h3>
+    
+          <!-- <div data-id="" class="hr-all-container">
+            <div class="shift-schedule-container">
+              <div class="shift-schedule">
+                <span>09:00</span>
+                <h3>Thor</h3>
+                <h3>/</h3>
+                <h3>Fernanda Costa</h3>
+              </div>
+              <h3>Vacinação</h3>
+              <h3 class="remove">Remover Agendamento</h3>
             </div>
-            <h3>Vacinação</h3>
-            <h3 class="remove">Remover Agendamento</h3>
-          </div>
-          <hr>
-          <div class="shift-schedule-container">
-            <div class="shift-schedule">
-              <span>09:00</span>
-              <h3>Thor</h3>
-              <h3>/</h3>
-              <h3>Fernanda Costa</h3>
-            </div>
-            <h3>Vacinação</h3>
-            <h3 class="remove">Remover Agendamento</h3>
-          </div>
-          <hr>
-          <div class="shift-schedule-container">
-            <div class="shift-schedule">
-              <span>09:00</span>
-              <h3>Thor</h3>
-              <h3>/</h3>
-              <h3>Fernanda Costa</h3>
-            </div>
-            <h3>Vacinação</h3>
-            <h3 class="remove">Remover Agendamento</h3>
-          </div>
+            <hr>
+          </div> -->
         </section>
         <section id="evening" class="shift">
           <div class="shift-header">
             <img src="src/assets/icons/moon.svg" alt="Icone de lua do turno da noite">
             <h2>Noite</h2>
-            <span>19h-21</span>
+            <span>19h-21h</span>
           </div>
           <div class="line"></div>
-          <div class="shift-schedule-container">
+          <!-- <div class="shift-schedule-container">
             <div class="shift-schedule">
               <span>09:00</span>
               <h3>Thor</h3>
@@ -110,7 +94,7 @@
             </div>
             <h3>Vacinação</h3>
             <h3 class="remove">Remover Agendamento</h3>
-          </div>
+          </div> -->
         </section>
       </div>
       <div class="margin-botton"></div>
@@ -124,16 +108,16 @@
       </header>
       <form action="">
         <label for="name-tutor">Nome do tutor</label>
-        <input type="text" id="name-tutor" placeholder="Helena Souza" >
+        <input type="text" id="name-tutor" placeholder="Helena Souza">
 
         <label for="name-pet">Nome do pet</label>
-        <input type="text" id="name-pet" placeholder="Cheddar" >
-        
+        <input type="text" id="name-pet" placeholder="Cheddar">
+
         <label for="tel">Telefone</label>
-        <input type="number" id="tel" placeholder="(00) 0 0000-0000" >
+        <input type="tel" id="tel" placeholder="(00) 0 0000-0000" maxlength="15">
 
         <label for="description">Descrição do serviço</label>
-        <textarea id="description" placeholder="Banho e tosa" ></textarea>
+        <textarea id="description" placeholder="Banho e tosa"></textarea>
 
         <div id="date-hour">
           <div id="date">
@@ -153,6 +137,10 @@
               <option value="15h">15h</option>
               <option value="16h">16h</option>
               <option value="17h">17h</option>
+              <option value="18h">18h</option>
+              <option value="19h">19h</option>
+              <option value="20h">20h</option>
+              <option value="21h">21h</option>
             </select>
           </div>
         </div>
