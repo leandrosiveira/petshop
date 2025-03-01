@@ -73,6 +73,7 @@
 .shift-schedule-container {
   display: flex;
   align-items: center;
+  gap: 1rem;
   /* border: 1px solid red; */
 
   & .remove {
@@ -91,7 +92,7 @@
   .shift-schedule {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 10fr 6fr 2fr 25fr;
+    grid-template-columns: 10fr 5fr 2fr 25fr;
     align-items: center;
     min-height: 3rem;
     /* border: 1px solid red; */
