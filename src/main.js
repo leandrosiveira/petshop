@@ -11,6 +11,7 @@ import "./modules/to-schedules/submit.js"
 import "./modules/schedules/date-change.js"
 import "./modules/schedules/schedules-load.js"
 import "./modules/to-schedules/tel-style.js"
+import "./modules/schedules/cancel.js"
 
 import "./modules/page-load.js"
 

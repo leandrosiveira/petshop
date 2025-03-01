@@ -33,6 +33,7 @@ export function schedulesShow({ dailySchedules }) {
     dailySchedules.forEach((schedule) => {
       const div_hr_all_container = document.createElement("div")
       div_hr_all_container.classList.add("hr-all-container")
+      div_hr_all_container.setAttribute("data-id", schedule.id)
       
       const shift_schedule_container = document.createElement("div")
       shift_schedule_container.classList.add("shift-schedule-container")
