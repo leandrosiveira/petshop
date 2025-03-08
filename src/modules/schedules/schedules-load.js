@@ -9,11 +9,7 @@ export async function schedulesDay() {
   const date = date_schedules.value
   
   // Busca no API os agendamento
-  const dailySchedules = await scheduleFetchByDay({ date })
-
-  // passa o array de dailySchedules e busca no agendamento do dia quantos agendamentos tem por turno para usar nas lines hr
-  countSchedulesByPeriod(dailySchedules)
-  
+  const dailySchedules = await scheduleFetchByDay({ date })  
 
   // Exibe os agendamentos
   schedulesShow({ dailySchedules })
