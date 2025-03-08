@@ -7,10 +7,10 @@ import "./libs/dayjs.js"
 import "./modules/interface/date-input.js"
 import "./modules/interface/overlay-blur.js"
 
-import "./modules/to-schedules/submit.js"
 import "./modules/schedules/date-change.js"
+import "./modules/to-schedules/submit.js"
 import "./modules/schedules/schedules-load.js"
-import "./modules/to-schedules/tel-style.js"
+import "./modules/interface/tel-style.js"
 import "./modules/schedules/cancel.js"
 
 import "./modules/page-load.js"

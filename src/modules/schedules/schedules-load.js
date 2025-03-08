@@ -4,8 +4,6 @@ import { schedulesShow } from "../schedules/show.js"
 
 const date_schedules = document.getElementById("date-schedule")
 
-date_schedules.onchange = () => schedulesDay()
-
 export async function schedulesDay() {
   // obtem a data do input
   const date = date_schedules.value

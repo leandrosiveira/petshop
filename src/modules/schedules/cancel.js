@@ -8,6 +8,7 @@ shifts.forEach((shift) => {
     if(event.target.classList.contains("remove")){
       const item = event.target.closest(".hr-all-container")
       const { id } = item.dataset
+      console.log(id)
       
       if (id) {
         const isConfirm = confirm(

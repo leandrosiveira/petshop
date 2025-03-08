@@ -9,7 +9,7 @@ const date_to_schedule = document.getElementById("date-to-schedule")
 const hour_to_schedule = document.getElementById("hour")
 
 form.onsubmit = async (event) => {
-  // event.preventDefault()
+  event.preventDefault()
   
   try {
     const id = new Date().getTime()
@@ -34,6 +34,8 @@ form.onsubmit = async (event) => {
     }
 
     await scheduleNew({id, nameTutor, namePet, tel, description, date, hour})
+
+    location.reload()
     
   } catch (error) {
     alert("Não foi possível realizar o agendamento.")
